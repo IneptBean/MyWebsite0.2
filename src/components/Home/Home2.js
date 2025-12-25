@@ -53,7 +53,7 @@ function Home2() {
                     {" "}UI/UX, Graphics, Gameplay{" "}
                   </b>
                 </i>
-                and exploring new ways to bridge on-chain and off-chain systems.
+              .
               </p>
             </Col>
           </Row>

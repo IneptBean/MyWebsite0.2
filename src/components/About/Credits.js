@@ -5,15 +5,15 @@ import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
 
-function Toolstack() {
+function Credits() {
   return (
      <blockquote className="blockquote mb-0 centered">
       <p style={{ textAlign: "justify" }}>
                 
-           You can contact me at sabine.aliev@icloud.com. You can also message me at my Linkedin.
+           I used the template from Soumyajit4419 as a base.
           </p>
 </blockquote>
   );
 }
 
-export default Toolstack;
+export default Credits;

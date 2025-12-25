@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import Credits from "./Credits";
 
 function About() {
   return (
@@ -43,11 +43,16 @@ function About() {
           <Techstack />
 
           <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+            <strong className="purple">Contact</strong> Me
           </h1>
           <Toolstack />
 
-          <Github />
+          
+          <h1 className="project-heading">
+            Credits
+
+          </h1>
+          <Credits />
         </Container>
       </Container>
     </>
