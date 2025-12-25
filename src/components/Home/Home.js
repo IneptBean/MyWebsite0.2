@@ -20,7 +20,7 @@ function Home() {
 
       {/* Name and Type */}
       <Container className="text-center" style={{ paddingTop: "20px" }}>
-        <h1 className="heading-name">
+  <h1 className="heading-name" style={{ color: "white" }}>
           Sabine <strong className="main-name">'Bean' </strong> Aliev
         </h1>
         <Type />
