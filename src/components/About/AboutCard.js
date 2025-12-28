@@ -10,6 +10,9 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
            My name is <span className="purple">Sabine Aliev</span>{" "}
             from <span className="purple">Redmond, Washington</span>.
+            <br /> I am born and raised in Chicago, IL, but I am ethicinally Azerbaijani. 
+            I know how to speak Russian conversionally. 
+                        <br />
             <br />
             I’m currently working as a{" "}
             <span className="purple">UI/UX Programmer</span> at{" "}

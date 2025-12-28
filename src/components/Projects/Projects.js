@@ -28,9 +28,9 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="HyperFist"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              description= "A comic-styled, first-person melee action game focused on punching and hand-to-hand combat. Utilizing the Unreal Game Engine, I serve as UI/UX engineer and designer, mainly worked with the Unreal widget systems"
+              //ghLink="https://github.com/soumyajit4419/Chatify"
+              //demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
@@ -41,9 +41,9 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="Midnight Delievry"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              description= "Cozy game where one collected ingredients to craft and deliver potions to villagers. Utilizing the Unreal Game Engine, I served as game play Ui programmer, mainly worked with the Unreal widget systems"
+              //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
@@ -54,9 +54,9 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Casino Menu UI"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              description="A personal project, I am making a dynamic UI menu system based on a casino"
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -66,9 +66,9 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Toxie Plant"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              description="A tower defense game programmed in a custom C++ game engine. I led as technical lead, responsible for game play and graphics programming"
+              //ghLink="https://github.com/soumyajit4419/Plant_AI"
+              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -79,8 +79,8 @@ function Projects() {
               imgPath={suicide}
               isBlog={false}
               title="Train Wreck"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              description="A 1-2 player rhythm game developed utilizing the DigiPen Graphics Library in C. I was the UI and Graphics programmer"
+              //ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
@@ -90,9 +90,8 @@ function Projects() {
               imgPath={emotion}
               isBlog={false}
               title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              description=""
+             // ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col> */}

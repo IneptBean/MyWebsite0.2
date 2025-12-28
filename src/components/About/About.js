@@ -24,7 +24,7 @@ function About() {
               }}
             >
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Salam, Prevet, Hello!
+                Salam, Привет, Hello!
               </h1>
               <Aboutcard />
             </Col>
@@ -45,11 +45,12 @@ function About() {
           <h1 className="project-heading">
             <strong className="purple">Contact</strong> Me
           </h1>
+          <br></br>
           <Toolstack />
 
           
           <h1 className="project-heading">
-            Credits
+            {/*Credits*/}
 
           </h1>
           <Credits />
