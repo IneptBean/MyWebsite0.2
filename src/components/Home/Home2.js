@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/pfpSabine.webp";
@@ -7,11 +7,21 @@ import {
   AiOutlineHome,
   AiOutlineUser,
   AiOutlineFundProjectionScreen,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 
 function Home2() {
+  const [copied, setCopied] = useState(false);
+  const email = "your.email@example.com";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -40,7 +50,7 @@ function Home2() {
                 <br />
                 I’m proficient in
                 <i>
-                  <b className="purple">
+                  <b className="homeBlueText">
                     {" "}C++, C, and C#{" "}
                   </b>
                 </i>
@@ -49,7 +59,7 @@ function Home2() {
                 <br />
                 My key areas of interest include developing
                 <i>
-                  <b className="purple">
+                  <b className="homeBlueText">
                     {" "}UI/UX, Graphics, Gameplay{" "}
                   </b>
                 </i>
@@ -71,7 +81,8 @@ function Home2() {
               <Link to="/resume" className="pixel-box  text-black">
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Link>
-              
+
+
             </Col>
           </Row>
 

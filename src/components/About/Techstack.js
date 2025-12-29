@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiNextdotjs, SiSolidity } from "react-icons/si";
 import { FaRust } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 import C from "../../Assets/TechIcons/C++.svg";
 
@@ -11,6 +12,15 @@ import AWS from "../../Assets/TechIcons/AWS.svg";
 
 
 function Techstack() {
+  const [copied, setCopied] = useState(false);
+  const email = "your.email@example.com";
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -49,6 +59,8 @@ function Techstack() {
         <img src={AWS} alt="OpenGl" className="tech-icon-images" />
         <div className="tech-icons-text">OpenGl</div>
       </Col>
+
+
 
     </Row>
   );

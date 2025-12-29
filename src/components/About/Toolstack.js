@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { AiOutlineCopy } from "react-icons/ai";
 
 function Toolstack() {
   const [copied, setCopied] = useState(false);
@@ -25,22 +24,16 @@ function Toolstack() {
           LinkedIn
         </a>
       </p>
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
-        <span>You can contact me at{" "}</span>
-        <div className="email-copy-bar" onClick={copyEmail} style={{
-          display: "flex",
-          alignItems: "center",
-          background: "rgba(255,255,255,0.1)",
-          padding: "10px 20px",
-          borderRadius: "8px",
-          cursor: "pointer",
-          marginLeft: "8px"
-        }}>
-          <span style={{ marginRight: "10px" }}>{email}</span>
-          <AiOutlineCopy />
-          {copied && <span style={{ marginLeft: "10px", color: "#c770f0" }}>Copied!</span>}
-        </div>
-      </div>
+      <p style={{ textAlign: "center" }}>
+        Or email me at{" "}
+        <span
+          onClick={copyEmail}
+          className="purple"
+          style={{ cursor: "pointer", textDecoration: "underline" }}
+        >
+          {copied ? "Copied!" : email}
+        </span>
+      </p>
     </div>
   );
 }

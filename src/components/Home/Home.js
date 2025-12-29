@@ -15,7 +15,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+    <section className="home-section" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       <Particle />
 
       {/* Name and Type */}

@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  font-family: "PT Mono", monospace !important;
+  font-family: 'Pixelify Sans', sans-serif !important;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* CHANGED: Main page background - pink to orange gradient */
