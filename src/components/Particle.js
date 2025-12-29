@@ -14,6 +14,9 @@ function Particle() {
               value_area: 1500,
             },
           },
+          shape:{
+            type: "square",
+          },
           line_linked: {
             enable: false,
             opacity: 0.03,
@@ -23,7 +26,7 @@ function Particle() {
             speed: 0.05,
           },
           size: {
-            value: 1,
+            value: 2,
           },
           opacity: {
             anim: {

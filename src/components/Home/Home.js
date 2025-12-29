@@ -15,11 +15,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <section style={{ height: "100vh", overflow: "hidden", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+    <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center" }}>
       <Particle />
 
       {/* Name and Type */}
-      <Container className="text-center" style={{ paddingTop: "20px" }}>
+      <Container className="text-center" style={{ paddingTop: "100px" }}>
   <h1 className="heading-name" style={{ color: "white" }}>
           Sabine <strong className="main-name">'Bean' </strong> Aliev
         </h1>
