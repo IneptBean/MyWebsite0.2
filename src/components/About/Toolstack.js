@@ -1,18 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
-import chrome from "../../Assets/TechIcons/Google Chrome.svg";
-import vsCode from "../../Assets/TechIcons/vscode.svg";
-import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import { AiOutlineCopy } from "react-icons/ai";
 
 function Toolstack() {
+  const [copied, setCopied] = useState(false);
+  const email = "sabine.aliev@icloud.com";
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
-     <blockquote className="blockquote mb-0 centered">
-      <p style={{ textAlign: "justify" }}>
-                
-           You can contact me at sabine.aliev@icloud.com. You can also message me at my Linkedin.
-          </p>
-</blockquote>
+    <div className="contact-section">
+      <p style={{ textAlign: "center" }}>
+        You can contact me on my{" "}
+        <a
+          href="https://www.linkedin.com/in/sabine-aliev"
+          target="_blank"
+          rel="noreferrer"
+          className="purple"
+        >
+          LinkedIn
+        </a>
+      </p>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+        <span>You can contact me at{" "}</span>
+        <div className="email-copy-bar" onClick={copyEmail} style={{
+          display: "flex",
+          alignItems: "center",
+          background: "rgba(255,255,255,0.1)",
+          padding: "10px 20px",
+          borderRadius: "8px",
+          cursor: "pointer",
+          marginLeft: "8px"
+        }}>
+          <span style={{ marginRight: "10px" }}>{email}</span>
+          <AiOutlineCopy />
+          {copied && <span style={{ marginLeft: "10px", color: "#c770f0" }}>Copied!</span>}
+        </div>
+      </div>
+    </div>
   );
 }
 

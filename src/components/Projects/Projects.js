@@ -29,7 +29,7 @@ function Projects() {
               isBlog={false}
               title="HyperFist"
               description= "A comic-styled, first-person melee action game focused on punching and hand-to-hand combat. Utilizing the Unreal Game Engine, I serve as UI/UX engineer and designer, mainly worked with the Unreal widget systems"
-              //ghLink="https://github.com/soumyajit4419/Chatify"
+               steamLink="https://store.steampowered.com/app/3689210/HYPERFIST/"
               //demoLink="https://chatify-49.web.app/"
             />
           </Col>

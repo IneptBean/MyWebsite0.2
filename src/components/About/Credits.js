@@ -4,16 +4,27 @@ import macOs from "../../Assets/TechIcons/Apple MacOSX.svg";
 import chrome from "../../Assets/TechIcons/Google Chrome.svg";
 import vsCode from "../../Assets/TechIcons/vscode.svg";
 import intelliJ from "../../Assets/TechIcons/intellij-idea.svg";
+import CreditText from "../../Assets/Credits.txt"
 
 function Credits() {
-  return (
-     <blockquote className="blockquote mb-0 centered">
-      <p style={{ textAlign: "justify" }}>
-                
-           I used the template from Soumyajit4419 as a base.
-          </p>
-</blockquote>
-  );
+return (
+  
+    <div className="contact-section">
+      <p style={{ textAlign: "center" }}>
+       {" "}
+        <a
+          href= {CreditText}
+          target="_blank"
+          rel="noreferrer"
+          className="purple"
+        >
+          Credits
+        </a>
+      </p>
+    </div>
+  
+);
+
 }
 
 export default Credits;

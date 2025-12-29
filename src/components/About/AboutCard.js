@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { AiFillStar } from "react-icons/ai";
 
 function AboutCard() {
   return (
@@ -10,8 +10,9 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
            My name is <span className="purple">Sabine Aliev</span>{" "}
             from <span className="purple">Redmond, Washington</span>.
-            <br /> I am born and raised in Chicago, IL, but I am ethicinally Azerbaijani. 
-            I know how to speak Russian conversionally. 
+            <br /> I am born and raised in 
+            <span className="purple"> Chicago, IL</span>, but I am ethicinally Azerbaijani. 
+            I know how to speak <span className="purple"> Russian </span>conversionally. 
                         <br />
             <br />
             I’m currently working as a{" "}
@@ -28,13 +29,13 @@ function AboutCard() {
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <AiFillStar /> Playing Games 🎮
             </li>
             <li className="about-activity">
-              <ImPointRight /> Drawing ✍️
+              <AiFillStar /> Drawing ✍️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Sewing 🪡
+              <AiFillStar /> Sewing 🪡
             </li>
           </ul>
 
