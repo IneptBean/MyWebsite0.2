@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Toxie from "../../Assets/Projects/ToxiePlant.jpg";
+
+import Casino from "../../Assets/Projects/CasinoTempImage.png";
+import HyperFist from "../../Assets/Projects/Hyperfist.jpg";
+import Train from "../../Assets/Projects/TrainWreck.jpg";
+import Midnight from "../../Assets/Projects/MidnightDelivery.jpg";
 
 function Projects() {
   return (
@@ -17,15 +17,25 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on.
-        </p>
+<p style={{ color: "white", textAlign: "center" }}>
+  Here are a few projects I've worked on.
+  <br />
+  For the time being, you can learn more on my{" "}
+        <a
+          href="https://www.linkedin.com/in/sabine-aliev/details/projects/"
+          target="_blank"
+          rel="noreferrer"
+          className="purple"
+        >
+          LinkedIn
+        </a>
+</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
            
            {/*HyperFist */}
             <ProjectCard
-              imgPath={chatify}
+              imgPath={HyperFist}
               isBlog={false}
               title="HyperFist"
               description= "A comic-styled, first-person melee action game focused on punching and hand-to-hand combat. Utilizing the Unreal Game Engine, I serve as UI/UX engineer and designer, mainly worked with the Unreal widget systems"
@@ -38,7 +48,7 @@ function Projects() {
 
           {/**Midnight Delievry */}
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={Midnight}
               isBlog={false}
               title="Midnight Delievry"
               description= "Cozy game where one collected ingredients to craft and deliver potions to villagers. Utilizing the Unreal Game Engine, I served as game play Ui programmer, mainly worked with the Unreal widget systems"
@@ -51,7 +61,7 @@ function Projects() {
 
           {/**UI Casino */}
             <ProjectCard
-              imgPath={editor}
+              imgPath={Casino}
               isBlog={false}
               title="Casino Menu UI"
               description="A personal project, I am making a dynamic UI menu system based on a casino"
@@ -63,7 +73,7 @@ function Projects() {
           <Col md={4} className="project-card">
           {/**Toxie Plant */}
             <ProjectCard
-              imgPath={leaf}
+              imgPath={Toxie}
               isBlog={false}
               title="Toxie Plant"
               description="A tower defense game programmed in a custom C++ game engine. I led as technical lead, responsible for game play and graphics programming"
@@ -76,7 +86,7 @@ function Projects() {
 
           {/**Train Wreck */}
             <ProjectCard
-              imgPath={suicide}
+              imgPath={Train}
               isBlog={false}
               title="Train Wreck"
               description="A 1-2 player rhythm game developed utilizing the DigiPen Graphics Library in C. I was the UI and Graphics programmer"

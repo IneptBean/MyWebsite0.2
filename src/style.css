@@ -13,7 +13,12 @@ html {
   );
 
   --imp-text-color: #4ed6ff;
-  font-family: 'Pixelify Sans', sans-serif;
+  --bs-font-sans-serif: 'WDXL Lubrifont JP N', sans-serif;
+  font-family: 'WDXL Lubrifont JP N', sans-serif;
+}
+
+body {
+  font-family: 'WDXL Lubrifont JP N', sans-serif !important;
 }
 
 .purple {
@@ -22,8 +27,9 @@ html {
 
 }
 .homeBlueText{
+  font-weight: 400;
   color: #00c8ff !important;
-    -webkit-text-stroke: 1px rgba(13, 81, 228, 0.534);
+    -webkit-text-stroke: 1px rgba(13, 81, 228, 0.493);
    
 }
 button:focus {
