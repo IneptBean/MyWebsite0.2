@@ -1,26 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import myImg from "../../Assets/pfpSabine.webp";
 import { Link } from "react-router-dom";
 import {
-  AiOutlineHome,
+  
   AiOutlineUser,
   AiOutlineFundProjectionScreen,
-  AiOutlineMail,
+  
 } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+
 
 function Home2() {
-  const [copied, setCopied] = useState(false);
-  const email = "your.email@example.com";
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+
+
 
   return (
     <Container fluid className="home-about-section" id="about">

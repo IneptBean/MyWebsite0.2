@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+
 
 import Cplus from "../../Assets/TechIcons/C++.svg";
 import C from "../../Assets/TechIcons/c.svg";
@@ -15,14 +13,7 @@ import Unreal from "../../Assets/TechIcons/unreal-engine.svg";
 import OpenGl from "../../Assets/TechIcons/opengl.svg";
 
 function Techstack() {
-  const [copied, setCopied] = useState(false);
-  const email = "your.email@example.com";
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const iconStyle = { width: "30px", height: "30px", objectFit: "contain" };
 
