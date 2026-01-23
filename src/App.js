@@ -6,12 +6,19 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import Midnight from "./components/Blog/Midnight";
+import Casino from "./components/Blog/Casino";
+import Hyper from "./components/Blog/Hyper";
+import Toxie from "./components/Blog/Toxie";
+import Train from "./components/Blog/Train";
+
+
 import BackgroundStars from "./components/BackgroundStars";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
@@ -36,13 +43,24 @@ function App() {
         <BackgroundStars count={20} />
         <Navbar />
         <ScrollToTop />
+
         <Routes>
+          {/* Main pages */}
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+
+          {/* Project pages */}
+          <Route path="/project/midnight-delivery" element={<Midnight />} />
+          <Route path="/project/hyperfist" element={<Hyper />} />
+          <Route path="/project/casino-menu-ui" element={<Casino />} />
+          <Route path="/project/toxie-plant" element={<Toxie />} />
+          <Route path="/project/train-wreck" element={<Train />} />
+          {/* Fallback */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
+
         <Footer />
       </div>
     </Router>

@@ -1,7 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import myImg from "../../Assets/pfpSabine.webp";
+//import myImg from "../../Assets/pfpSabine.webp";
+import myPFP from "../../Assets/pfpSabine.png";
 import { Link } from "react-router-dom";
 import {
   
@@ -28,7 +29,7 @@ function Home2() {
           <Row className="justify-content-center">
             <Col md="auto" className="myAvtar">
               <Tilt>
-                <img src={myImg} className="img-fluid" alt="avatar" />
+                <img src={myPFP} className="img-fluid" alt="avatar" />
               </Tilt>
             </Col>
           </Row>

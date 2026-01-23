@@ -35,11 +35,13 @@ function Projects() {
            
            {/*HyperFist */}
             <ProjectCard
+
               imgPath={HyperFist}
               isBlog={false}
               title="HyperFist"
               description= "A comic-styled, first-person melee action game focused on punching and hand-to-hand combat. Utilizing the Unreal Game Engine, I serve as UI/UX engineer and designer, mainly worked with the Unreal widget systems"
                steamLink="https://store.steampowered.com/app/3689210/HYPERFIST/"
+               //slug="hyperfist"
               //demoLink="https://chatify-49.web.app/"
             />
           </Col>
@@ -48,12 +50,14 @@ function Projects() {
 
           {/**Midnight Delievry */}
             <ProjectCard
+              
               imgPath={Midnight}
               isBlog={false}
               title="Midnight Delievry"
               description= "Cozy game where one collected ingredients to craft and deliver potions to villagers. Utilizing the Unreal Game Engine, I served as game play Ui programmer, mainly worked with the Unreal widget systems"
               //ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              //demoLink="https://blogs.soumya-jit.tech/"
+              slug="midnight-delivery"
+              
             />
           </Col>
 
@@ -65,10 +69,27 @@ function Projects() {
               isBlog={false}
               title="Casino Menu UI"
               description="A personal project, I am making a dynamic UI menu system based on a casino"
+              //slug="casino-menu-ui"
               //ghLink="https://github.com/soumyajit4419/Editor.io"
               //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
+
+          <Col md={4} className="project-card">
+
+          {/**SuperHero Game Space UI */}
+            <ProjectCard
+              imgPath={Casino}
+              isBlog={false}
+              title="SuperHero Gamespace UI"
+              description="A design project for a class, I am making a worldspace UI menu in Unreal Engine"
+              //slug="casino-menu-ui"
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col>
+
+          
 
           <Col md={4} className="project-card">
           {/**Toxie Plant */}
@@ -77,6 +98,7 @@ function Projects() {
               isBlog={false}
               title="Toxie Plant"
               description="A tower defense game programmed in a custom C++ game engine. I led as technical lead, responsible for game play and graphics programming"
+              //slug="toxie-plant"
               //ghLink="https://github.com/soumyajit4419/Plant_AI"
               //demoLink="https://plant49-ai.herokuapp.com/"
             />
@@ -90,6 +112,7 @@ function Projects() {
               isBlog={false}
               title="Train Wreck"
               description="A 1-2 player rhythm game developed utilizing the DigiPen Graphics Library in C. I was the UI and Graphics programmer"
+              //slug="train-wreck"
               //ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
