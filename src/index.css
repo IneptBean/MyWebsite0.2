@@ -1,13 +1,62 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap'); */
-
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit&family=PT+Mono&display=swap");
 
+/* --------------------------- */
+/* Global Styles               */
+/* --------------------------- */
 body {
   margin: 0;
   font-family: 'Pixelify Sans', sans-serif !important;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* CHANGED: Main page background - pink to orange gradient */
-  background-image: linear-gradient(to left, rgb(45 20 25), rgb(35 15 20));
+  background-image: linear-gradient(to left, rgb(45,20,25), rgb(35,15,20)); /* fallback */
+}
+
+/* --------------------------- */
+/* CSS Variables for gradients */
+/* --------------------------- */
+html {
+  --section-background-color: linear-gradient(
+    rgba(100,44,255,0.582),
+    rgba(255,11,194,0.274)
+  );
+}
+
+/* --------------------------- */
+/* Section Backgrounds         */
+/* --------------------------- */
+.home-section,
+.project-section,
+.resume-section,
+.about-section {
+  background-color: #4c2cff; /* fallback */
+  background-image: var(--section-background-color);
+  color: white;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* --------------------------- */
+/* Preloader                   */
+/* --------------------------- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #0c0513;
+  background-image: url('./Assets/pre.svg'); /* update path if needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.5s ease;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }
