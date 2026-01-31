@@ -13,7 +13,7 @@ function Home() {
       <Particle />
 
       {/* Name and Type */}
-      <Container className="text-center" style={{ paddingTop: "100px" }}>
+      <Container className="text-center home-header">
   <h1 className="heading-name" style={{ color: "white" }}>
           Sabine <strong className="main-name">'Bean' </strong> Aliev
         </h1>

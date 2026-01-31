@@ -12,7 +12,12 @@ function Footer() {
 
   return (
     <Container fluid className="footer">
-      <Row className="justify-content-end">
+      <Row className="align-items-center">
+        <Col md="4">
+        </Col>
+        <Col md="4" className="footer-copywright text-center">
+          <h3>&copy; {new Date().getFullYear()} Sabine Aliev</h3>
+        </Col>
         <Col
           md="4"
           className="footer-body d-flex justify-content-end"

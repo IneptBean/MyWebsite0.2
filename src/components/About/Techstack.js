@@ -47,6 +47,10 @@ function Techstack() {
         <img src={Unreal} alt="Unreal Engine" style={iconStyle} />
         <div className="tech-icons-text">Unreal Engine</div>
       </Col>
+            <Col xs={4} md={2} className="tech-icons">
+        <img src={Unreal} alt="CommonUI" style={iconStyle} />
+        <div className="tech-icons-text">CommonUI</div>
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={OpenGl} alt="OpenGl" style={iconStyle} />
         <div className="tech-icons-text">OpenGl</div>
