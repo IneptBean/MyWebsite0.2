@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-
+//Image in the {}
 // import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
 // import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
 // import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
