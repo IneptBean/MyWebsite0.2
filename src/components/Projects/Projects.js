@@ -41,7 +41,7 @@ function Projects() {
               title="HyperFist"
               description= "A comic-styled, first-person melee action game focused on punching and hand-to-hand combat. Utilizing the Unreal Game Engine, I serve as UI/UX engineer and designer, mainly worked with the Unreal widget systems"
                steamLink="https://store.steampowered.com/app/3689210/HYPERFIST/"
-               //slug="hyperfist"
+               slug="hyperfist"
               //demoLink="https://chatify-49.web.app/"
             />
           </Col>
