@@ -11,6 +11,9 @@ import Casino from "./components/Blog/Casino";
 import Hyper from "./components/Blog/Hyper";
 import Toxie from "./components/Blog/Toxie";
 import Train from "./components/Blog/Train";
+import ControllerSupport from "./components/Blog/HyperFistSub/ControllerSupport";
+import Programming from "./components/Blog/HyperFistSub/Programming";
+import TechArt from "./components/Blog/HyperFistSub/TechArt";
 
 
 import BackgroundStars from "./components/BackgroundStars";
@@ -57,6 +60,12 @@ function App() {
           <Route path="/project/casino-menu-ui" element={<Casino />} />
           <Route path="/project/toxie-plant" element={<Toxie />} />
           <Route path="/project/train-wreck" element={<Train />} />
+
+          {/* HyperFist sub-pages */}
+          <Route path="/project/hyperfist/controller-support" element={<ControllerSupport />} />
+          <Route path="/project/hyperfist/programming" element={<Programming />} />
+          <Route path="/project/hyperfist/tech-art" element={<TechArt />} />
+
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
