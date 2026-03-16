@@ -1,8 +1,4 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub, BsSteam } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 
