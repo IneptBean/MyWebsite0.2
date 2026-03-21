@@ -14,6 +14,7 @@ import Train from "./components/Blog/Train";
 import ControllerSupport from "./components/Blog/HyperFistSub/ControllerSupport";
 import Programming from "./components/Blog/HyperFistSub/Programming";
 import TechArt from "./components/Blog/HyperFistSub/TechArt";
+import InitPrep from "./components/Blog/SuperMenuSub/InitalPrep";
 
 
 import BackgroundStars from "./components/BackgroundStars";
@@ -27,6 +28,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SuperMenu from "./components/Blog/SuperMenu";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -60,12 +62,15 @@ function App() {
           <Route path="/project/casino-menu-ui" element={<Casino />} />
           <Route path="/project/toxie-plant" element={<Toxie />} />
           <Route path="/project/train-wreck" element={<Train />} />
+          <Route path="/project/super-3d-menu" element={<SuperMenu />} />
 
           {/* HyperFist sub-pages */}
           <Route path="/project/hyperfist/controller-support" element={<ControllerSupport />} />
           <Route path="/project/hyperfist/programming" element={<Programming />} />
           <Route path="/project/hyperfist/tech-art" element={<TechArt />} />
 
+          {/* Super Menu subpages */}
+          <Route path="/project/super-3d-menu/init-prep" element={<InitPrep />} />
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

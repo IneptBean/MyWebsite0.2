@@ -61,19 +61,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
 
-          {/**UI Casino */}
-            <ProjectCard
-              imgPath={Casino}
-              isBlog={false}
-              title="Casino Menu UI"
-              description="A personal project, I am making a dynamic UI menu system based on a casino"
-              //slug="casino-menu-ui"
-              //ghLink="https://github.com/soumyajit4419/Editor.io"
-              //demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
 
           <Col md={4} className="project-card">
 
@@ -83,13 +71,25 @@ function Projects() {
               isBlog={false}
               title="SuperHero Gamespace UI"
               description="A design project for a class, I am making a worldspace UI menu in Unreal Engine"
-              //slug="casino-menu-ui"
+              slug="super-3d-menu"
               //ghLink="https://github.com/soumyajit4419/Editor.io"
               //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
-          
+                    {/* <Col md={4} className="project-card"> */}
+
+          {/**UI Casino */}
+            {/* <ProjectCard
+              imgPath={Casino}
+              isBlog={false}
+              title="Casino Menu UI"
+              description="A personal project, I am making a dynamic UI menu system based on a casino"
+              //slug="casino-menu-ui"
+              //ghLink="https://github.com/soumyajit4419/Editor.io"
+              //demoLink="https://editor.soumya-jit.tech/"              
+            />
+          </Col> */}
 
           <Col md={4} className="project-card">
           {/**Toxie Plant */}
