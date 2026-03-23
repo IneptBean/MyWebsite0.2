@@ -16,23 +16,32 @@ function GameTable() {
     "Brutalism", "Techno", "Blocks", "Photography"
   ];
 
+  const circled = ["RPG", "Murder Mystery", "Super Hero", "Art Mashing"];
+  const circleStyle = { border: "2px solid white", borderRadius: "50%", padding: "4px 12px", display: "inline-block" };
+
+  const renderCell = (value) => {
+    if (!value) return "";
+    if (circled.includes(value)) return <span style={circleStyle}>{value}</span>;
+    return value;
+  };
+
   const maxRows = Math.max(genres.length, themes.length, artStyles.length);
 
   return (
-    <table>
+    <table style={{ margin: "0 auto", fontSize: "1.25rem", borderCollapse: "collapse" }}>
       <thead>
         <tr>
-          <th>Game Genre</th>
-          <th>Game Theme</th>
-          <th>Art Style</th>
+          <th style={{ border: "1px solid white", padding: "10px 20px" }}>Game Genre</th>
+          <th style={{ border: "1px solid white", padding: "10px 20px" }}>Game Theme</th>
+          <th style={{ border: "1px solid white", padding: "10px 20px" }}>Art Style</th>
         </tr>
       </thead>
       <tbody>
         {Array.from({ length: maxRows }, (_, i) => (
           <tr key={i}>
-            <td>{genres[i] || ""}</td>
-            <td>{themes[i] || ""}</td>
-            <td>{artStyles[i] || ""}</td>
+            <td style={{ border: "1px solid white", padding: "8px 20px" }}>{renderCell(genres[i])}</td>
+            <td style={{ border: "1px solid white", padding: "8px 20px" }}>{renderCell(themes[i])}</td>
+            <td style={{ border: "1px solid white", padding: "8px 20px" }}>{renderCell(artStyles[i])}</td>
           </tr>
         ))}
       </tbody>

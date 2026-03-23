@@ -74,17 +74,17 @@ function SuperMenu() {
             <SubMenu
               imgPath={Mash}
               title="Figma Design"
-              slug="hyperfist/programming"
+              slug="super-3d-menu/figma-design"
             />
           </Col>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <SubMenu
               imgPath={Mash}
               title="Unreal Impletation"
-              slug="hyperfist/tech-art"
+              slug="super-3d-menu/unreal-implementation"
               //demoLink="https://chatify-49.web.app/"
             />
-          </Col>
+          </Col> */}
 </Row>
 
       </Container>

@@ -15,6 +15,8 @@ import ControllerSupport from "./components/Blog/HyperFistSub/ControllerSupport"
 import Programming from "./components/Blog/HyperFistSub/Programming";
 import TechArt from "./components/Blog/HyperFistSub/TechArt";
 import InitPrep from "./components/Blog/SuperMenuSub/InitalPrep";
+import Unreal from "./components/Blog/SuperMenuSub/Unreal";
+import Figma from "./components/Blog/SuperMenuSub/Figma";
 
 
 import BackgroundStars from "./components/BackgroundStars";
@@ -71,6 +73,8 @@ function App() {
 
           {/* Super Menu subpages */}
           <Route path="/project/super-3d-menu/init-prep" element={<InitPrep />} />
+          <Route path="/project/super-3d-menu/figma-design" element={<Figma />} />
+          <Route path="/project/super-3d-menu/unreal-implementation" element={<Unreal />} />
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
