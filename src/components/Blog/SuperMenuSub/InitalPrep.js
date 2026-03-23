@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Particle";
 import GameTable from "../../Projects/GameTable";
 import Slideshow from "../../Slideshow";
