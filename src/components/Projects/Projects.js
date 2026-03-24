@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import Toxie from "../../Assets/Projects/ToxiePlant.jpg";
 
-import Casino from "../../Assets/Projects/CasinoTempImage.png";
+import Super from "../../Assets/Projects/Super.png";
 import HyperFist from "../../Assets/Projects/Hyperfist.jpg";
 import Train from "../../Assets/Projects/TrainWreck.jpg";
 import Midnight from "../../Assets/Projects/MidnightDelivery.jpg";
@@ -67,7 +67,7 @@ function Projects() {
 
           {/**SuperHero Game Space UI */}
             <ProjectCard
-              imgPath={Casino}
+              imgPath={Super}
               isBlog={false}
               title="SuperHero Gamespace UI"
               description="A design project for a class, I am making a worldspace UI menu in Unreal Engine"

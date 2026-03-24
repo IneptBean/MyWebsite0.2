@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import SubMenu from "../Projects/SubMenuSelect";
 //Image in the {}
- import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
+ import Ini from "../../Assets/Projects/Images/DES 395 Project_Inspo.png";
+ import fig from "../../Assets/Projects/Images/DES 395 Project_Main2.png";
 // import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
 // import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
 // import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
@@ -65,14 +66,14 @@ function SuperMenu() {
            
            {/*HyperFist */}
             <SubMenu
-              imgPath={Mash}
+              imgPath={Ini}
               title="Initial Set Up"
               slug="super-3d-menu/init-prep"
             />
           </Col>
           <Col md={4} className="project-card">
             <SubMenu
-              imgPath={Mash}
+              imgPath={fig}
               title="Figma Design"
               slug="super-3d-menu/figma-design"
             />

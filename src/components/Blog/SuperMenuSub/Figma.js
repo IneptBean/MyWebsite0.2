@@ -6,6 +6,8 @@ import ControlPanel from "../../ControlPanel";
 //Image in the {}
  import lay from "../../../Assets/Projects/Images/DES 395 Project_Layout.png";
  import time from "../../../Assets/Projects/Images/DES 395 Project_Timeline.png";
+  import one from "../../../Assets/Projects/Images/DES 395 Project_Main1.png";
+    import two from "../../../Assets/Projects/Images/DES 395 Project_Main2.png";
 // import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
 // import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
 // import bug from "../../Assets/Projects/Images/UnrealBug.png";
@@ -69,8 +71,7 @@ function Figma() {
       </p>
 
       <p className="mb-4">
-        It was aroun this time I made my first concept of the main character, and her story. In super powered world where almost everyone has a superpower, a teenage girl from the Soivet Union who has the power of Re-Winding to a prior save point after she dies.
-        She is trying to solve the mystery of the recent string of murders in her school. 
+        Afterwards, I made a first pass of my UI mock up in figma, it was not super polished but had some extra details needed.
         
       </p>
                     
@@ -80,7 +81,40 @@ function Figma() {
 
   </Col>
 </Row>
+<Row className="mb-5">
+          <Col md={12} className="text-center">
+            <img src={one} alt="Layout blueprint" style={{ width: "100%", borderRadius: "8px" }} />
+          </Col>
+          </Row>
 
+        <Row className="mb-5">
+          <Col md={12} className="text-center">
+            
+
+    <blockquote className="mb-0 fs-4" style={{ marginTop: 0, paddingTop: 0 }}>
+      <h3 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>
+       
+      </h3>
+
+      <p className="mb-4">
+      </p>
+
+      <p className="mb-4">
+        I did some Heurtics testing on my UI, and I got some pretty valuable feedback. With the feedback, I made a new version of my UI and started working in the engine. 
+        
+      </p>
+                    
+
+
+    </blockquote>
+
+  </Col>
+</Row>
+<Row className="mb-5">
+          <Col md={12} className="text-center">
+            <img src={two} alt="Layout blueprint" style={{ width: "100%", borderRadius: "8px" }} />
+          </Col>
+          </Row>
         <Row className="mb-5">
           <Col md={12} className="text-center">
             <ControlPanel
