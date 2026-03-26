@@ -3,7 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import SubMenu from "../Projects/SubMenuSelect";
 //Image in the {}
- import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
+ import Art from "../../Assets/Projects/Images/ArtTextPic.png";
+ import Con from "../../Assets/Projects/Images/ControllerButtonPic.png"
 // import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
 // import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
 // import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
@@ -78,21 +79,21 @@ function Hyper() {
            
            {/*HyperFist */}
             <SubMenu
-              imgPath={Mash}
+              imgPath={Con}
               title="Controller Support"
               slug="hyperfist/controller-support"
             />
           </Col>
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <SubMenu
               imgPath={Mash}
               title="Programming"
               slug="hyperfist/programming"
             />
-          </Col>
+          </Col> */}
           <Col md={4} className="project-card">
             <SubMenu
-              imgPath={Mash}
+              imgPath={Art}
               title="UI Material"
               slug="hyperfist/tech-art"
               //demoLink="https://chatify-49.web.app/"
