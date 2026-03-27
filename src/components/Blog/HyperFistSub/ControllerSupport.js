@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Particle";
+import ControlPanel from "../../ControlPanel";
 //Image in the {}
 // import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
 // import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
@@ -9,6 +11,7 @@ import Particle from "../../Particle";
 // import bug from "../../Assets/Projects/Images/UnrealBug.png";
 
 function Midnight() {
+  const navigate = useNavigate();
   return (
     <Container fluid className="project-section">
       <Particle />
@@ -80,6 +83,18 @@ function Midnight() {
             </blockquote>
           </Col>
         </Row> */}
+
+        <Row className="mt-5">
+          <Col md={12} className="text-center">
+            <ControlPanel
+              text="Navigate"
+              buttons={[
+                { label: "Back", onClick: () => navigate("/project/hyperfist") },
+                { label: "Tech Art", onClick: () => navigate("/project/hyperfist/tech-art") },
+              ]}
+            />
+          </Col>
+        </Row>
       </Container>
     </Container>
   );

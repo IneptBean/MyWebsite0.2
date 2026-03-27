@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Particle";
-
+import ControlPanel from "../../ControlPanel";
 import HyperPauseMaterial from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_PauseMaterial.gif";
 import HyperEnemy from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_Enemy.gif";
 import HyperButtonHover from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_ButtonHover.gif";
@@ -15,12 +16,14 @@ const gallery = [
 ];
 
 function TechArt() {
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
 
   const prev = () => setCurrent((c) => (c === 0 ? gallery.length - 1 : c - 1));
   const next = () => setCurrent((c) => (c === gallery.length - 1 ? 0 : c + 1));
 
   return (
+    
     <Container fluid className="project-section">
       <Particle />
 
@@ -161,6 +164,19 @@ function TechArt() {
             </div>
           ))}
         </div>
+
+        <Row className="mt-5">
+          <Col md={12} className="text-center">
+            <ControlPanel
+              text="Navigate"
+              buttons={[
+                { label: "Back", onClick: () => navigate("/project/hyperfist") },
+                { label: "Controller Support", onClick: () => navigate("/project/hyperfist/controller-support") },
+                
+              ]}
+            />
+          </Col>
+        </Row>
       </Container>
     </Container>
   );
