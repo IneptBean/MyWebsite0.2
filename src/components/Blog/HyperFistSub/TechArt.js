@@ -1,88 +1,169 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Particle";
-//Image in the {}
-// import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
-// import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
-// import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
-// import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
-// import bug from "../../Assets/Projects/Images/UnrealBug.png";
 
-function Midnight() {
+import HyperPauseMaterial from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_PauseMaterial.gif";
+import HyperEnemy from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_Enemy.gif";
+import HyperButtonHover from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_ButtonHover.gif";
+import HyperKirbyDots from "../../../Assets/Projects/Images/HyperArtGallery/Hyper_KirbyDots.gif";
+
+const gallery = [
+  { src: HyperPauseMaterial, label: "Pause Material" },
+  { src: HyperEnemy, label: "Enemy" },
+  { src: HyperButtonHover, label: "Button Hover" },
+  { src: HyperKirbyDots, label: "Kirby Dots" },
+];
+
+function TechArt() {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c === 0 ? gallery.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === gallery.length - 1 ? 0 : c + 1));
+
   return (
     <Container fluid className="project-section">
       <Particle />
 
       <Container style={{ paddingTop: "120px", color: "white" }}>
-        {/* Header */}
-        <Row className="mb-5">
+        <Row className="mb-4">
           <Col md={12} className="text-center">
-            <h1 className="purple"style={{ marginTop: 0, paddingTop: 0, paddingBottom: "80px"}}> UI Material</h1>
+            <h1 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "40px" }}>
+              UI Material and UI Animation
+            </h1>
           </Col>
         </Row>
-        <h3 className="purple">This Section is WIP</h3>
 
+        {/* Main slideshow image */}
+        <div style={{
+          position: "relative",
+          maxWidth: "900px",
+          margin: "0 auto",
+          background: "#0d0d0d",
+          borderRadius: "8px",
+          overflow: "hidden",
+        }}>
+          <img
+            src={gallery[current].src}
+            alt={gallery[current].label}
+            style={{
+              width: "100%",
+              display: "block",
+              aspectRatio: "16 / 9",
+              objectFit: "contain",
+              background: "#0d0d0d",
+            }}
+          />
 
+          {/* Left arrow */}
+          <button
+            onClick={prev}
+            style={{
+              position: "absolute",
+              left: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              background: "rgba(0,0,0,0.6)",
+              border: "none",
+              color: "white",
+              fontSize: "2rem",
+              width: "48px",
+              height: "48px",
+              borderRadius: "50%",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "background 0.2s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(80,60,200,0.7)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(0,0,0,0.6)")}
+          >
+            &#8249;
+          </button>
 
-<Row style={{ justifyContent: "center", padding: "10px" }}>
-  <Col md={12}>
-    <blockquote className="mb-0 fs-4" style={{ marginTop: 0, paddingTop: 0 }}>
-      <h3 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>
-       
-      </h3>
+          {/* Right arrow */}
+          <button
+            onClick={next}
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              background: "rgba(0,0,0,0.6)",
+              border: "none",
+              color: "white",
+              fontSize: "2rem",
+              width: "48px",
+              height: "48px",
+              borderRadius: "50%",
+              cursor: "pointer",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "background 0.2s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(80,60,200,0.7)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(0,0,0,0.6)")}
+          >
+            &#8250;
+          </button>
+        </div>
 
-      <p className="mb-4">
-      </p>
+        {/* Title under main image */}
+        <p style={{
+          textAlign: "center",
+          marginTop: "14px",
+          fontSize: "1.15rem",
+          color: "#ccc",
+          letterSpacing: "0.5px",
+        }}>
+          {gallery[current].label}
+        </p>
 
-      <p className="mb-4">
-        When I first started this project, I assumed it would take a bit, but I never could have imaged the amount of work it would take.
-        I quickly figured out that Unreal was not built for World Space UI to work with controller. After multiple hours of 
-        trouble shooting and debuging, I decided to try one last thing, then I would switch to manaully moving the cursor. 
-      </p>
-                    <p className="mb-4">
-        I decided that I would line up cubes to the UI and when the game picked up the fact it was in controller mode, it would automaticly travere between the points.
-        I was then left with another issue, the fact the widget would only be hovered for a split second until the mouse disappeared and it was unhovered again. 
-        What I did was in the Event Tick, I would have it move the mouse to the position of the widget after a 0.01 delay. With that it somehow worked beautifully. Im still
-        working on this feature and not everything works 100% of the time. But after I am done with this, I might make an actual tool for this so implementing World Space UI
-        would be easier.
-        
-       </p>
-
-
-    </blockquote>
-
-  </Col>
-</Row>
-
-
-{/* 
-        <Row>
-          <Col md={12}>
-            <blockquote className="mb-0 fs-4"  style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>
-              <h3 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>Takeaways</h3>
-              The Unreal Engine is an amazing 3D game engine but I should have not used widgets for a core gameplay mechanic.
-              I was able to make it work, but it caused way more stress than necessary.
-              Also, the inter-team drama happens and how to navigate letting them go from the team. And in the end, I learned I liked UI programming.
-            </blockquote>
-          </Col>
-        </Row> */}
-
-        {/* Learnings */}
-        {/* <Row>
-          <Col md={12}>
-            <h3 className="purple"  style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>What I Learned</h3>
-            <blockquote className="mb-0 fs-4">
-              <ul>
-                <li>Using Unreal Engine and widget systems</li>
-                <li>Working with large interdisciplinary teams</li>
-                <li>Managing scope, stress, and team conflict</li>
-              </ul>
-            </blockquote>
-          </Col>
-        </Row> */}
+        {/* Thumbnail strip */}
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "12px",
+          marginTop: "20px",
+          paddingBottom: "40px",
+          flexWrap: "wrap",
+        }}>
+          {gallery.map((item, idx) => (
+            <div
+              key={idx}
+              onClick={() => setCurrent(idx)}
+              style={{
+                width: "140px",
+                height: "80px",
+                borderRadius: "6px",
+                overflow: "hidden",
+                cursor: "pointer",
+                border: idx === current
+                  ? "2px solid #7c4dff"
+                  : "2px solid transparent",
+                opacity: idx === current ? 1 : 0.5,
+                transition: "opacity 0.2s, border-color 0.2s",
+                background: "#0d0d0d",
+              }}
+              onMouseEnter={(e) => { if (idx !== current) e.currentTarget.style.opacity = "0.8"; }}
+              onMouseLeave={(e) => { if (idx !== current) e.currentTarget.style.opacity = "0.5"; }}
+            >
+              <img
+                src={item.src}
+                alt={item.label}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </Container>
     </Container>
   );
 }
 
-export default Midnight;
+export default TechArt;
