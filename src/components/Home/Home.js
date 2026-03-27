@@ -14,7 +14,7 @@ function Home() {
 
       {/* Name and Type */}
       <Container className="text-center home-header">
-  <h1 className="heading-name" style={{ color: "white" }}>
+  <h1 className="heading-name" style={{ color: "white" , textAlign: "center" }}>
           Sabine <strong className="main-name">'Bean' </strong> Aliev
         </h1>
         <Type />

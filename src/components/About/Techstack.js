@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 
 import {
   SiC, SiCplusplus, SiCsharp, SiUnity, SiUnrealengine, SiOpengl,
-  SiFigma, SiSteam, SiSteamdeck, SiNintendoswitch, SiGit, SiPerforce
+  SiFigma, SiSteamdeck, SiNintendoswitch, SiGit, SiPerforce
 } from "react-icons/si";
 import { FaPaintBrush, FaGamepad, FaCubes, FaHandPointer, FaBolt, FaUsers, FaComments, FaCogs, FaPen } from "react-icons/fa";
 import { MdAnimation, MdDesignServices, MdViewInAr, MdWindow } from "react-icons/md";
