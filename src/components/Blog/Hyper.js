@@ -5,6 +5,7 @@ import SubMenu from "../Projects/SubMenuSelect";
 //Image in the {}
  import Art from "../../Assets/Projects/Images/ArtTextPic.png";
  import Con from "../../Assets/Projects/Images/ControllerButtonPic.png"
+ import Trail from "../../Assets/Projects/Images/microtrailer.webm"
 // import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
 // import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
 // import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
@@ -32,7 +33,7 @@ function Hyper() {
               playsInline
             >
               {/* Add video source here later */}
-              {/* <source src={yourVideo} type="video/mp4" /> */}
+              { <source src={Trail} type="video/webm" /> }
             </video>
           </Col>
         </Row>

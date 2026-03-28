@@ -3,12 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../Particle";
 import ControlPanel from "../../ControlPanel";
-//Image in the {}
-// import Mash from "../../Assets/Projects/Images/MidnightMash.jpg";
-// import Mix from "../../Assets/Projects/Images/MidnightStir.jpg";
-// import Weigh from "../../Assets/Projects/Images/MidnightWeigh.jpg";
-// import Tit from "../../Assets/Projects/Images/MidnightTitle.jpg";
-// import bug from "../../Assets/Projects/Images/UnrealBug.png";
+import ControllerVideo from "../../../Assets/Projects/Images/ControllerWorking.mp4";
 
 function Midnight() {
   const navigate = useNavigate();
@@ -20,17 +15,22 @@ function Midnight() {
         {/* Header */}
         <Row className="mb-5">
           <Col md={12} className="text-center">
-            <h1 className="purple"style={{ marginTop: 0, paddingTop: 0, paddingBottom: "80px"}}> Controller Support</h1>
+            <h1 className="purple"style={{ marginTop: 0, paddingTop: 0, paddingBottom: "20px"}}> Controller Support</h1>
           </Col>
         </Row>
-        <h3 className="purple">This Section is WIP</h3>
 
-
+        <Row className="mb-2" style={{ justifyContent: "center" }}>
+          <Col md={3} className="text-center">
+            <video width="100%" controls>
+              <source src={ControllerVideo} type="video/mp4" />
+            </video>
+          </Col>
+        </Row>
 
 <Row style={{ justifyContent: "center", padding: "10px" }}>
   <Col md={12}>
     <blockquote className="mb-0 fs-4" style={{ marginTop: 0, paddingTop: 0 }}>
-      <h3 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "30px" }}>
+      <h3 className="purple" style={{ marginTop: 0, paddingTop: 0, paddingBottom: "0px" }}>
        
       </h3>
 
@@ -38,19 +38,22 @@ function Midnight() {
       </p>
 
       <p className="mb-4">
-        When I first started this project, I assumed it would take a bit, but I never could have imaged the amount of work it would take.
-        I quickly figured out that Unreal was not built for World Space UI to work with controller. After multiple hours of 
-        trouble shooting and debuging, I decided to try one last thing, then I would switch to manaully moving the cursor. 
+When I first started this project, I assumed it would take a bit, but I never could have imagined the amount of work it would take. 
+I quickly figured out that Unreal was not built for World Space UI to work with controllers. After multiple hours of trouble shooting and debugging, 
+I decided to try one last thing, then I would switch to manually moving the cursor.
+
       </p>
                     <p className="mb-4">
-        I decided that I would line up cubes to the UI and when the game picked up the fact it was in controller mode, it would automaticly travere between the points.
-        I was then left with another issue, the fact the widget would only be hovered for a split second until the mouse disappeared and it was unhovered again. 
-        What I did was in the Event Tick, I would have it move the mouse to the position of the widget after a 0.01 delay. With that it somehow worked beautifully. Im still
-        working on this feature and not everything works 100% of the time. But after I am done with this, I might make an actual tool for this so implementing World Space UI
-        would be easier.
+I decided that I would line up cubes to the UI and when the game picked up the fact it was in controller mode, 
+it would automatically traverse between the points. I was then left with another issue, the fact the widget would only be hovered for a split second 
+until the mouse disappeared and it was unhovered again. What I did was in the Event Tick, I would have it move the mouse to the position of the widget 
+after a 0.01 delay. With that it somehow worked beautifully. 
         
        </p>
-
+      <p className="mb-4">
+        I'm still working on this feature and not everything works 100% of the time. But after I am done with this, 
+        I might make an actual tool for this so implementing World Space UI would be easier.
+      </p>
 
     </blockquote>
 
