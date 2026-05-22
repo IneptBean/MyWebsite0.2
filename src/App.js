@@ -17,9 +17,9 @@ import TechArt from "./components/Blog/HyperFistSub/TechArt";
 import InitPrep from "./components/Blog/SuperMenuSub/InitalPrep";
 import Unreal from "./components/Blog/SuperMenuSub/Unreal";
 import Figma from "./components/Blog/SuperMenuSub/Figma";
+import Portfolio from "./components/Portolio/Portfolio";
 
 
-import BackgroundStars from "./components/BackgroundStars";
 import {
   BrowserRouter as Router,
   Route,
@@ -47,7 +47,6 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <BackgroundStars count={20} />
         <Navbar />
         <ScrollToTop />
 
@@ -57,6 +56,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
 
           {/* Project pages */}
           <Route path="/project/midnight-delivery" element={<Midnight />} />

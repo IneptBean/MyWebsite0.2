@@ -22,10 +22,6 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
 
-        {/* Box */}
-        <div className="brutalist-box">
-
-          {/* Row 1: Avatar */}
           <Row className="justify-content-center">
             <Col md="auto" className="myAvtar">
               <Tilt>
@@ -33,43 +29,36 @@ function Home2() {
               </Tilt>
             </Col>
           </Row>
+          <br>
+          </br>
+        {/* Box */}
+        <div className="portfolio-box">
+          <div className="portfolio-box-inner">
+
 
           {/* Row 2: Text */}
           <Row>
             <Col className="home-about-description  mt-4">
-              <h1 className="text-black" style={{ fontSize: "2.6em" }}>
+              <h1 className="text-black" style={{ fontSize: "2.6em" ,  textAlign: "center"} }>
                 Hello There
               </h1>
-              <p className="home-about-body text-black">
-                I’m a UI/UX programmer who also has experience as a graphics programming and gameplay programming. My goal is to bring things to life, make something that stands out.
-                <br />
-                <br />
-                I’m proficient in
-                <i>
-                  <b className="homeBlueText">
-                    {" "}C++, C, and C#{" "}
-                  </b>
-                </i>
-               
-                <br />
-                <br />
-                My key areas of interest include developing
-                <i>
-                  <b className="homeBlueText">
-                    {" "}UI/UX, Graphics, Gameplay{" "}
-                  </b>
-                </i>
-              .
+              <p className="home-about-body text-black" >
+                My name is Sabine, but most call me Bean. I am a UI/UX Programmer and Designer, with skills in Technical Design,
+Graphics Engineering, and Gameplay. My passion is combine my technical, design, and art skills into making games that I am
+proud to call mine.
               </p>
             </Col>
           </Row>
 
           {/* Row 3: Navigation Links */}
-          <Row className="justify-content-center mt-4">
+
+          </div>
+        </div>
+                  <Row className="justify-content-center mt-4">
             <Col className="d-flex justify-content-around flex-wrap">
 
-              <Link to="/about" className="pixel-box text-black">
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <Link to="/portfolio" className="pixel-box text-black">
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> Portfolio
               </Link>
               <Link to="/project" className="pixel-box  text-black">
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
@@ -81,8 +70,6 @@ function Home2() {
 
             </Col>
           </Row>
-
-        </div>
       </Container>
     </Container>
   );

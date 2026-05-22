@@ -15,18 +15,17 @@ function Particle() {
             },
           },
           shape: {
-            type: "square",
+            type: "star",
+            polygon: {
+              sides: 8,
+            },
           },
           color: {
             value: [
-              "hsla(160, 39%, 38%, 1.00)",    // black
-              "hsla(64, 100%, 50%, 1.00)",  // white
+              "rgb(128, 255, 210)",
+              "rgb(255, 255, 255)",
+              "rgb(255, 162, 230)",
             ],
-            animation: {
-              enable: true,
-              speed: 6,
-              sync: false,
-            },
           },
           opacity: {
             value: 0.6,
@@ -51,19 +50,10 @@ function Particle() {
             enable: false,
           },
         },
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              quantity: 1,
-            },
-          },
-        },
+       
+
+
+        
         detectRetina: true,
       }}
     />
