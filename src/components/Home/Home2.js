@@ -54,16 +54,16 @@ proud to call mine.
 
           </div>
         </div>
-                  <Row className="justify-content-center mt-4">
-            <Col className="d-flex justify-content-around flex-wrap">
+                  <Row className="justify-content-center mt-2">
+            <Col className="d-flex justify-content-center flex-wrap" style={{ gap: "0.5rem" }}>
 
-              <Link to="/portfolio" className="pixel-box text-black">
+              <Link to="/portfolio" className="portpixel-box text-black">
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> Portfolio
               </Link>
-              <Link to="/project" className="pixel-box  text-black">
+              <Link to="/project" className="portpixel-box  text-black">
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
               </Link>
-              <Link to="/resume" className="pixel-box  text-black">
+              <Link to="/resume" className="portpixel-box  text-black">
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Link>
 

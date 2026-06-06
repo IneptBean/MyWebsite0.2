@@ -423,6 +423,47 @@ font-size: 18px;
     padding-top: 10px !important;
   }
 }
+.portpixel-box{
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  width: fit-content;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: left;
+  text-decoration: none;
+  padding: 3rem 6rem 3rem 1.5rem;
+  background-image: url("./Assets/GhostLabel.png");
+
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+   transition: transform 0.15s steps(2, end), opacity 0.15s steps(2, end) !important;
+}
+
+/* Tint layer: masked by the image so only opaque pixels get colored */
+.portpixel-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.65);
+  -webkit-mask: url("./Assets/GhostLabel.png") left / contain no-repeat;
+  mask: url("./Assets/GhostLabel.png") left / contain no-repeat;
+  opacity: 0;
+  transition: opacity 0.15s steps(2, end) !important;
+  pointer-events: none;
+}
+
+.portpixel-box:hover {
+  transform: scale(1.05) !important;
+}
+
+.portpixel-box:hover::before {
+  opacity: 1;
+}
 
 .portfolio-box {
     max-width: 700px;
